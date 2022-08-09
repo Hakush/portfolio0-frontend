@@ -16,6 +16,26 @@ body {
   color: white;
 }
 
+.bottomWindow {
+  border: 2.5px solid rgba(0, 0, 0, 0.5);
+  background: rgba(0, 0, 0, 0.5);
+  font-weight: bold;
+  color: white;
+}
+
+.Vcenter {
+  margin: 0;
+  position: absolute;
+	top: 50%;
+	-ms-transform: translateY(-50%);
+	transform: translateY(-50%);
+  right: 0%;
+}
+
+.VcenterCont {
+  position: relative;
+}
+
 .backgroundopacity {
   padding: px;
   border: 0px solid rgba(25, 0, 99,0.5);
@@ -52,6 +72,6 @@ img {
   text-align: left; width:49%;  display: inline-block;
 }
 
-h1, h2 {
+/*h1, h2 {
   font-family: Lato;
-}
+}*/
