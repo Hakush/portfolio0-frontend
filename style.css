@@ -1,0 +1,40 @@
+body {
+  background-color: black;
+  /*background-color: rgb(65, 0, 109); purple nice colour*/
+  color: whitesmoke;
+  font-family: 'Courier New', Courier, monospace; !important
+}
+
+.topWindow {
+  padding: 10px;
+  border: 5px solid rgb(56, 56, 56);
+  text-align: left;
+  background: rgb(36, 36, 36);
+  font-weight: bold;
+  color: white;
+}
+
+.portada {
+  width: 100%;
+  align-self: center;
+}
+
+.perfil {
+  width: 10%;
+}
+
+.center {
+  text-align: center; width:50%;  display: inline-block;
+}
+
+.right {
+  text-align: right; width:50%;  display: inline-block;
+}
+
+.left { 
+  text-align: left; width:49%;  display: inline-block;
+}
+
+h1, h2 {
+  font-family: Lato;
+}
