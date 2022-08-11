@@ -7,6 +7,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
 		<link href="style.css" rel="stylesheet">
+		<link rel="shortcut icon" type="image/x-icon" href="assets/favicon.ico" alt="Icon">
 		<title>Portfolio Facundo Sharry</title>
 		<!-- Estilo de ventana directamente en las columnas, descartado porque se requiere usar las columnas en otros lugares sin la necesidad de tener el mismo color de ventana
 			<style>
@@ -27,46 +28,30 @@
 	<header>
 
 		<!--Version 4 de la ventana de arriba-->
-		<nav>
+		<nav id="navbar">
 			<div class="topWindow">
 				<div class="container-fluid">
 					<div class="row align-items-center" align="center">
-						<div class="col-md-3"><button type="button" class="btn btn-link"><img style="height: 5%; width: 400px;" src="assets/APLogo-20-200.png" alt="Logo"></button></div>
-						<div class="col-md"><button type="button" class="btn btn-link" style="font-size: 200%">Inicio</button></div>
-						<div class="col-md"><button type="button" class="btn btn-link" style="font-size: 200%">Portfolio</button></div>
-						<div class="col-md"><button type="button" class="btn btn-link" style="font-size: 200%">About</button></div>
-						<div class="col-md"><button type="button" class="btn btn-link" style="font-size: 200%">Contacto</button></div>
-						<div class="col-md" style="right: 0%; text-align: right;"><button type="button" class="btn btn-light" style="font-size: 150%; ; background-color: rgba(125, 0, 150,1); border-color: rgba(125, 0, 150,1); color: whitesmoke;">Login</button></div>
+						<div class="col-md" ><button type="button enlace" role="link" onclick="window.location='https://www.argentina.gob.ar/produccion/transformacion-digital-y-economia-del-conocimiento/argentina-programa'" class="btn btn-link"><img style="left: 0%; text-align: left;height: 5%; width: 200px;" title="Curso Argentina Programa" src="assets/APLogo-20-200.png" alt="Logo"></button><a class="enlace" href="https://www.argentina.gob.ar/produccion/transformacion-digital-y-economia-del-conocimiento/argentina-programa"></a></div>
+						<div class="col-md"><button type="button" class="btn btn-link" style="color: white; font-size: 200%">Inicio</button></div>
+						<div class="col-md"><button type="button" class="btn btn-link" style="color: white; font-size: 200%">Portfolio</button></div>
+						<div class="col-md"><button type="button" class="btn btn-link" style="color: white; font-size: 200%">About</button></div>
+						<div class="col-md"><button type="button" class="btn btn-link" style="color: white; font-size: 200%">Contacto</button></div>
+						<div class="col-md" style="right: 0%; text-align: right;"><button style="height: 75px;" type="button enlace" role="link" onclick="window.location='https://github.com/Hakush'" class="btn btn-link"><img style="" title="Github" src="assets/github.png" alt="Logo Github"></button><a class="enlace" href="https://github.com/Hakush"></a><button type="button" class="btn btn-light" style="font-size: 150%; ; background-color: rgba(125, 0, 150,1); border-color: rgba(125, 0, 150,1); color: whitesmoke;">Login</button></div>
 					</div>
 				</div>
 			</div>
 		</nav>
-
-		<!--Version 3 de la ventana de arriba
-		<div role="navigation" class="topWindow">
-			<div class="container-fluid">
-				<div class="row">
-					<div class="col-md-6"><button type="button" class="btn btn-link"><img class ="rounded float-start" style="height: 50px; width: 200px;" src="assets/APLogo-20-200.png" alt="Logo"></button></div>
-					<div class="col-md-6" style="text-align: right;"><button type="button" class="btn btn-light" style="height: 50px; background-color: rgba(125, 0, 150,1); border-color: rgba(125, 0, 150,1); color: whitesmoke;">Login</button></div>
-				</div>
-			</div>
-		</div>-->
-		<!-- version 2 de la ventana de arriba
-			<div class="topWindow">
-			<div style="text-align: right; width:100%;  display: inline-block;"><img class ="rounded float-start" style="width: 10%;" src="assets/APLogo-20-200.png" alt="Logo"><button type="button" class="btn btn-light">Login</button></div> 
-			</div> -->
-		<!-- version 1 de la ventana de arriba
-			<div class="topWindow">Facundo Sharry Portfolio <button type="button" class="btn btn-dark"><span class="right">Login</span></button></div>-->
 	
 	</header>
 
 	<div class="backgroundopacity">
+	<br><br><br><br>
 	<section style="text-align: center;">
-		<!-- Version previa de foto de portada, descartada porque no es realmente tan necesario una foto de portada
-		<div><img class ="img-fluid" style="width: 100%; padding: 0.5%;" src="assets/portada2.jpg" alt="Portada"></div> -->
-		<h1><img class= "img-thumbnail" style="width: 10%; margin-left: 0.5%; background-color: rgba(65, 0, 109,0.5); border-color: rgba(65, 0, 109,0.5);" src="assets/perfil2.png" alt="Foto de Perfil"> Facundo Sharry</h1>
-		<ul type="circle" style="display: inline-block; text-align: left;"><p><li>Programador web fullstack, estudiante de <br> Licenciatura en Ciencias de la Computación(Famaf-UNC)<br><li>Cordoba (Argentina) <br><li><a href="https://linktr.ee/facundosharry">Info. de contacto</a> </p></ul>
-	
+
+		<h1><img title="Foto de Perfil" style="width: 10%; margin-left: -5%;" src="assets/perfil3.png" alt="Foto de Perfil"><span style="margin-left: 3%">Facundo Sharry</span></h1>
+		<ul type="circle" style="display: inline-block; text-align: left;"><p><li>Programador web fullstack, estudiante de <br> Licenciatura en Ciencias de la Computación(Famaf-UNC)<br><li>Cordoba (Argentina) <br><li><a target="_blank" href="https://linktr.ee/facundosharry">Info. de contacto</a> </p></ul>
+
 	</section>
 
 	<hr>
@@ -106,22 +91,34 @@
 
 		<div class="bottomWindow">
 			<div class="container">
-
+				<br>
 				<div class="row">
 		
-			  	<div class="col-md-6" align="center"> facundo.sharry@gmail.com </div>
+			  		<div class="col-md-6" align="center"> facundo.sharry@gmail.com </div>
 		
-			  	<div class="col-md-6" align="center"> (+54 9)3547 563095 </div>
+			  		<div class="col-md-6" align="center"> (+54 9)3547 563095 </div>
 
-				<div class="col-md-6" align="center"> facundo.sharry@gmail.com </div>
-		
-			  	<div class="col-md-6" align="center"> (+54 9)3547 563095 </div>
+					<br><br>
 
-				<div class="col-md-6" align="center"> facundo.sharry@gmail.com </div>
+					<div class="col-md-6" align="center"> <a target="_blank" href="mailto:facundo.sharry@gmail.com"> Enviar Mail </a></div>
 		
-			  	<div class="col-md-6" align="center"> (+54 9)3547 563095 </div>
+			  		<div class="col-md-6" align="center"> <a target="_blank" href="https://api.whatsapp.com/send?phone=5493547563095">Envíar un mensaje de WhatsApp</a> </div>
+
+					</div>
+
+					<br>
+
+				<div class="row">
+
+					<div class="col-md" align="center"> 
+						<form>
+							<input type="text" placeholder="Dejá tu feedback" maxlength="512" name="feedback">
+							<input type="submit" value="Enviar" class="sendformhdr" style="font-family: Arial, sans-serif; font-size: 12px;">
+						</form> 
+					</div>
 
 				</div>
+
 			</div>
 		</div>
 
