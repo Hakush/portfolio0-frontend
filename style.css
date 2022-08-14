@@ -1,9 +1,18 @@
 body {
-  background-color: rgba(65, 0, 109,0);
   /*background-color: rgb(65, 0, 109); purple nice colour*/
-  color: whitesmoke;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif, monospace; !important
-  opacity: 0.7; !important
+  color: yellowgreen;
+  /*font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif, monospace; !important*/
+  font-family: Lato, sans-serif, monospace;
+}
+
+.backgroundopacity {
+  border: 0px solid rgba(25, 0, 99,0.5);
+  text-align: left;
+  background: rgba(0, 0, 0, 0.5);
+  color: rgb(204, 190, 0);
+  font-size: 125%;
+  margin-bottom: 0;
+  padding-bottom: 0;
 }
 
 .topWindow {
@@ -16,7 +25,7 @@ body {
   text-align: left;
   background: rgba(65, 0, 109,0.7);
   font-weight: bold;
-  color: white;
+  color: yellowgreen;
   margin-top: 0%;
   margin-left: 0%;
   margin-right: 0%;
@@ -36,14 +45,16 @@ body {
   background: rgba(0, 0, 0, 0.7);
   font-weight: bold;
   color: white;
+  margin-top: 0;
+  padding-top: 0;
 }
 
 .enlace {
   display:inline;
   border:0;
-  padding:0;
-  margin:0;
-  text-decoration:underline;
+  padding:5%;
+  margin:0%;
+  text-decoration:none;
   background:none;
   color:#000088;
   font-family: arial, sans-serif;
@@ -89,15 +100,6 @@ body {
   position: relative;
 }
 
-.backgroundopacity {
-  padding: px;
-  border: 0px solid rgba(25, 0, 99,0.5);
-  text-align: left;
-  background: rgba(0, 0, 0, 0.5);
-  font-weight: bold;
-  color: white;
-}
-
 img {
   max-width: 100%;
   max-height: 100%;
@@ -125,6 +127,10 @@ img {
   text-align: left; width:49%;  display: inline-block;
 }
 
-/*h1, h2 {
-  font-family: Lato;
-}*/
+h1, h2 {
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+#displayFont {
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
