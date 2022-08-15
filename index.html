@@ -10,6 +10,9 @@
 		<meta charset="utf-8">
 		<!--No idea yet, seems important for responsiveness -->
 		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<!--Metadatos para posicionarse mejor en las busquedas de google u otro buscador-->
+		<meta name="description" content="Portfolio web hecho en el programa Argentina Programa de Facundo Sharry" />
+		<meta name="keywords" content="Portfolio, design, webpage, Facundo Sharry, desarrollo, pagina web, Argentina Programa" />
 		<!--Importing of the bootstrap css framework -->
 		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
 		<!--Importing of my own css stylesheet/code-->
@@ -20,78 +23,153 @@
 		<title>Portfolio Facundo Sharry</title>
 		<!-- Sintax of how to add properties/style to an unknow or hidden style
 			<style>
-			[class*="col"] {
-				padding: 10px;
-  				border: 5px solid rgb(56, 56, 56);
-  				background: rgb(36, 36, 36);
-  				font-weight: bold;
-  				color: white;
+			[class*="btn btn-light:hover"] {
+				border: yellow;
 			}
 		
 		</style> -->
 
+		<script src="index.js"></script>
+		<script src="package.json"></script>
+		<script src="tsconfig.json"></script>
+		<script src="lib/jquery-1.9.1.min.js"></script>
+		<script src="lib/bootstrap.min.js"></script>
+		
+
 </head>
 
 <!--BODY: The entire text and everything on the page is in here, background="" property sets an image as background-->
-<body background="assets/mosaicofondo.png" style="background-color: rgb(197, 153, 255); color: yellowgreen !important; " alt="background image">
+<body>
 	
 	<!--HEADER: The first and most important section of the page, usually the navigation bar -->
 	<header>
 		<!--Navigation Bar TODO: responsiveness, always on top except on mobile-->
-		<nav id="navbar" class="topWindow container-fluid">
-				<div class="row align-items-center" id="displayFont" align="center">
-						<div class="col-md-2" ><button type="button" class="enlace" role="link" onclick="window.location='https://www.argentina.gob.ar/produccion/transformacion-digital-y-economia-del-conocimiento/argentina-programa'" class="btn btn-link"><img style="left: 0%; text-align: left;height: 5%; width: 200px;" title="Curso Argentina Programa" src="assets/APLogo-20-200.png" alt="Logo"></button><a class="enlace" href="https://www.argentina.gob.ar/produccion/transformacion-digital-y-economia-del-conocimiento/argentina-programa"></a></div>
-						<div class="col-md"><button type="button" class="btn btn-link enlace" id="displayFont" style="color: yellowgreen; border: 4px solid yellowgreen; font-size: 125%">Inicio</button></div>
-						<div class="col-md"><button type="button" class="btn btn-link enlace" id="displayFont" style="color: yellowgreen; border: 4px solid yellowgreen; font-size: 125%">Portfolio</button></div>
-						<div class="col-md"><button type="button" class="btn btn-link enlace" id="displayFont" style="color: yellowgreen; border: 4px solid yellowgreen; font-size: 125%">About</button></div>
-						<div class="col-md"><button type="button" class="btn btn-link enlace" id="displayFont" style="color: yellowgreen; border: 4px solid yellowgreen; font-size: 125%">Contacto</button></div>
-						<div class="col-md-4" style="right: 0%; text-align: right;"><button style="height: 70px; padding-left: 2.5px; padding-right: 2.5px; " type="button" role="link" onclick="window.location='https://www.instagram.com/facu.sharry/'" class="btn btn-link"><img style="" title="Instagram" src="assets/instagram.png" alt="Logo Instagram"></button><button style="height: 70px; padding-left: 2.5px; padding-right: 0px; " type="button" role="link" onclick="window.location='https://www.linkedin.com/in/facundo-sharry-6748021b9/'" class="btn btn-link"><img style="" title="Linkedin" src="assets/linkedin.png" alt="Logo Linkedin"></button><button style="height: 79px; padding-left: 0px; padding-right: 0px; " type="button" role="link" onclick="window.location='https://github.com/Hakush'" class="btn btn-link"><img style="" title="Github" src="assets/github.png" alt="Logo Github"></button><button type="button" class="btn btn-light" style="margin-right: 5%; font-size: 150%; ; background-color: rgba(125, 0, 150,1); border-color: rgba(125, 0, 150,1); color: yellowgreen;">Login</button></div>
-				</div>
-			</nav>
+	<nav id="navbar" class="topWindow container-fluid displayFont">
+		<div class="row align-items-center" class="displayFont" align="center">
+			
+			<div class="col-md-2" >
+				
+			<button type="button" class="enlace" role="link" onclick="window.location='https://www.argentina.gob.ar/produccion/transformacion-digital-y-economia-del-conocimiento/argentina-programa'" class="btn btn-link">
+				
+			<img style="left: 0%; text-align: left;height: 2em; width: 20em;" title="Curso Argentina Programa" src="assets/APLogo-20-200.png" alt="Logo">
+		
+			</button>
+			
+			<a class="enlace" href="https://www.argentina.gob.ar/produccion/transformacion-digital-y-economia-del-conocimiento/argentina-programa"></a>
+		
+			</div>
+			
+			<div class="col-md">
+				
+			<button type="button" class="btn btn-link enlace displayFont" style="color: yellowgreen; border: 4px solid yellowgreen; font-size: 125%">Inicio</button>
+		
+			</div>
+			
+			<div class="col-md">
+				
+			<button type="button" class="btn btn-link enlace displayFont" style="color: yellowgreen; border: 4px solid yellowgreen; font-size: 125%">Portfolio</button>
+		
+			</div>
+			
+			<div class="col-md">
+				
+			<button type="button" class="btn btn-link enlace displayFont" style="color: yellowgreen; border: 4px solid yellowgreen; font-size: 125%">About</button>
+		
+			</div>
+			
+			<div class="col-md">
+				
+			<button type="button" class="btn btn-link enlace displayFont" style="color: yellowgreen; border: 4px solid yellowgreen; font-size: 125%">Contacto</button>
+		
+			</div>
+			
+			<div class="col-md-5" style="right: 0%; text-align: right;">
+			
+			<button style="height: 3em; padding-left: 2.5px; padding-right: 2.5px; " type="button" role="link" onclick="window.location='https://www.instagram.com/facu.sharry/'" class="btn btn-link">
+
+			<img title="Instagram" src="assets/instagram.png" alt="Logo Instagram">
+
+			</button>
+			
+			<button style="height: 3em; padding-left: 2.5px; padding-right: 0px; " type="button" role="link" onclick="window.location='https://www.linkedin.com/in/facundo-sharry-6748021b9/'" class="btn btn-link">
+			
+			<img style="" title="Linkedin" src="assets/linkedin.png" alt="Logo Linkedin">
+		
+			</button>
+			
+			<button style="height: 3em; padding-left: 0px; padding-right: 0px;" type="button" role="link" onclick="window.location='https://github.com/Hakush'" class="btn btn-link zeropadzeromargtopbot">
+				
+			<img style="" title="Github" src="assets/github.png" alt="Logo Github">
+		
+			</button>
+			
+			<button type="button" class="btn btn-light" style="margin-right: 5%; font-size: 1.25em; height: 2em; background-color: rgba(125, 0, 150,1); border-color: rgba(125, 0, 150,1); color: yellowgreen;">Login</button></div>
+			</div>
+	</nav>
 	
 	</header>
 
 	<!--Pongo un section de class wrapper que rodea todo el fondo con un color negro algo transparente para darle un efecto oscuro y de fondo a la imagen de fondo, sin afectar la barra de nav (o el footer si lo pudiese arreglar, por ahora lo incluye)-->
 	<section class="wrapper backgroundopacity">
-			<!--4 br para hacer espacio entre la navbar y la siguiente seccion, TODO: que detecte automaticamente de iniciar la siguiente seccion despues de la navbar-->
-			<br><br><br><br>
+			<!--3 br para hacer espacio entre la navbar y la siguiente seccion, TODO: que detecte automaticamente de iniciar la siguiente seccion despues de la navbar-->
+			<br><br>
 
+		<!--Section MAIN: centered text is in here, except footer, header and sidebar(if i wanted to put one)-->
 		<section class="main"> 
 			<!--1st article(article 1): Foto de Perfil + Titulo(nombre)-->
 			<article style="text-align: center;">
-
+				<p>
 				<h1>
-					<img title="Foto de Perfil" style="width: 10%; margin-left: -5%;" src="assets/perfil3.png" alt="Foto de Perfil">
-					<span id="displayFont" style="margin-left: 3%;"><i>Facundo Sharry</i></span>
+					<img title="Foto de Perfil" style="width: 5em; margin-left: -5%;" src="assets/perfil3.png" alt="Foto de Perfil">
+					<span class="displayFont" style="margin-left: 3%;"><i>Facundo Sharry</i></span>
 				</h1>
 
 				<!--NOTES: to align it in the center but at the left of the center, you need to first text align center the main div/section and then in the next div/span/ul add inline block + text align left property-->
 				<ul type="circle" style="display: inline-block; text-align: left;">
-					<p><li> Fullstack developer junior, estudiante de 
-						<br> Licenciatura en Ciencias de la Computación(Famaf-UNC)
-						<br>
-						<li>Cordoba (Argentina) 
-						<br>
-						<li> <a target="_blank" href="https://linktr.ee/facundosharry"> Info. de contacto </a> </p>
+					<li> Fullstack developer junior, estudiante de <br> 
+					Licenciatura en Ciencias de la Computación(Famaf-UNC)
+					<li>Cordoba (Argentina)
+					<li> <a style="text-decoration: none;" target="_blank" href="https://linktr.ee/facundosharry"> Info. de contacto </a>
 				</ul>
-
+				</p>
 			</article>
 
-			<!--hr pone una linea blanca entre secciones para separarlas y que quede mas elegante-->
+			<!--hr pone una linea entre secciones para separarlas y que quede mas elegante-->
+			<hr>
+
+			<!--2nd Article(article 2): Informacion personal-->
+			<article style="text-align: center;">
+				<p>
+				<h2>Informacion Personal</h2>
+				<ul type="circle" style="display: inline-block; text-align: left;">
+					
+					<li><strong>Nombre completo:</strong> Facundo Nicolás Sharry Ferreira 
+					<li><strong>Edad:</strong> 21 años
+					<li><strong>DNI:</strong> 47635191
+					<li><strong>Fecha y lugar de Nacimiento:</strong> 29 de Junio de 2001 en San Justo, Buenos Aires
+					<li><strong>Nacionalidad:</strong> Argentino
+					<li><strong>Direccion:</strong> Santa Cruz 40, La Bolsa, Cordoba (CP: 5186)
+					<li><strong>Nro. de Celular:</strong> (+54 9) 3547-563095
+					<li><strong>E-mail:</strong> facundo.sharry@gmail.com
+					
+				</ul>
+				</p>
+			</article>
+
 			<hr>
 
 			<!--2nd Article(article 2): Experiencia-->
 			<article style="text-align: center;">
-
+				<p>
 				<h2>Experiencia</h2>
 				<ul type="circle" style="display: inline-block; text-align: left;">
-					<p><strong>  <li>Puesto:</strong> Ayudante de armado y reparación de pc (Emprendimiento) 
-					<br> <strong><li>Tareas realizadas:</strong> Instalación de OS, software, conexión de cables/componentes, 
-					<br>atención al ciente, caja, diseño gráfico y publicidad 
-					<br>         <li>(Septiembre 2017-Actualidad)
-					<br>         <li>Referencia: Patricio Oliva 3515452149</p>
+					<li><strong>Puesto:</strong> Ayudante de armado y reparación de pc (Emprendimiento)
+					<li><strong>Tareas realizadas:</strong> Instalación de OS, software, conexión de cables/componentes, <br>
+					atención al ciente, caja, diseño gráfico y publicidad
+					<li><strong>Referencia:</strong> Patricio Oliva 3515452149
+					<div style="opacity: 80%; text-align: center;">[2017-actualidad]</div>
 				</ul>
-
+				</p>
 			</article>
 
 			<hr>
@@ -101,34 +179,46 @@
 
 				<h2>Formación</h2>
 				<ul type="circle" style="display: inline-block; text-align: left;">
-				<p><li><strong>Titulo Secundario:</strong> Bachiller especializado en Ciencias Sociales
-					<br>Otorgado por Ipem Independencia 97 en el 2020</p>
-				<p><li><strong>Terciario/Universitario:</strong> Estudiante de 2do año de la carrera de Lic. en 
-					<br>Ciencias de la Computación, FAMAF, UNC. (7 materias de 26, promedio de 8.89)</p>
+					<li><strong>Titulo Secundario:</strong> Bachiller especializado en Ciencias Sociales<br>
+					Otorgado por Ipem Independencia 97 en el 2020
+					<!--TODO: Barra de progreso en 30%, indicando 7 materias de 27-->
+					<p><li><strong>Terciario/Universitario:</strong> Estudiante de 2do año de la carrera de Lic. en <br>
+					Ciencias de la Computación, FAMAF, UNC. (Progreso 30%, Materias 7/26, Promedio: 8.86)</p>
 	    		</ul>
-
+				
 			</article>
 
 			<hr>
 
-			<!--4th Article(article 4): Habilidades + Idiomas -->
+			<!--4th Article(article 4): Hard and soft skills -->
 			<article style="text-align: center;">
 
-				<h2>Habilidades</h2>
-				<p><ul type="circle" style="display: inline-block; text-align: left;">
+				<h2>Hard and Soft Skills</h2>
+				<div><ul type="circle" style="display: inline-block; text-align: left;">
+
+					<li>Adobe photoshop, premiere, word, excel
+					<li>Inglés bueno
+
+					</ul></div>
+
+			</article>
+
+				<hr>
+
+			<!--4th Article(article 4): Proyectos -->
+			<article style="text-align: center;">
+
+				<h2>Proyectos</h2>
+				<div><ul type="circle" style="display: inline-block; text-align: left;">
 
 					<li>Adobe photoshop, premiere, word, excel
 
-					</ul></p>
+					</ul></div>
 
-				<h2>Idiomas extra:</h2>
-				<p><ul type="circle" style="display: inline-block; text-align: left;">
-
-					<li>Inglés bueno
-
-					</ul></p>
 				</article>
 		</section>
+
+	<aside></aside>
 
 	<!-- Last section/article: footer, usually contains contact information -->
 	<footer>
