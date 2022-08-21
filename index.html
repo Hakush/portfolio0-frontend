@@ -43,85 +43,84 @@
 	
 	<!--HEADER: The first and most important section of the page, usually the navigation bar -->
 	<header>
-		<!--Navigation Bar TODO: responsiveness, always on top except on mobile-->
+	<!--Navigation Bar TODO: responsiveness, always on top except on mobile-->
 	<nav id="navbar" class="topWindow container-fluid displayFont">
-		<div class="row align-items-center" class="displayFont" align="center">
+		<div class="row align-items-center displayFont" style="margin: 0px 0px; padding-right:0px; margin-right:0px" align="center">
 			
 			<div class="col-md-2" >
 				
-			<button type="button" class="enlace" role="link" onclick="window.location='https://www.argentina.gob.ar/produccion/transformacion-digital-y-economia-del-conocimiento/argentina-programa'" class="btn btn-link">
+			<button type="button" class="imglink" role="link" onclick="window.location='https://www.argentina.gob.ar/produccion/transformacion-digital-y-economia-del-conocimiento/argentina-programa'">
 				
 			<img style="left: 0%; text-align: left;height: 2em; width: 20em;" title="Curso Argentina Programa" src="assets/APLogo-20-200.png" alt="Logo">
 		
 			</button>
-			
-			<a class="enlace" href="https://www.argentina.gob.ar/produccion/transformacion-digital-y-economia-del-conocimiento/argentina-programa"></a>
 		
 			</div>
 			
 			<div class="col-md">
 				
-			<button type="button" class="btn btn-link enlace displayFont" style="color: yellowgreen; border: 4px solid yellowgreen; font-size: 125%">Inicio</button>
+			<button type="button" class="btnlink displayFont" role="link" onclick="window.location='#'">Inicio</button>
 		
 			</div>
 			
 			<div class="col-md">
 				
-			<button type="button" class="btn btn-link enlace displayFont" style="color: yellowgreen; border: 4px solid yellowgreen; font-size: 125%">Portfolio</button>
+			<button type="button" class="btnlink displayFont">Portfolio</button>
 		
 			</div>
 			
 			<div class="col-md">
 				
-			<button type="button" class="btn btn-link enlace displayFont" style="color: yellowgreen; border: 4px solid yellowgreen; font-size: 125%">About</button>
+			<button type="button" class="btnlink displayFont">About</button>
 		
 			</div>
 			
 			<div class="col-md">
 				
-			<button type="button" class="btn btn-link enlace displayFont" style="color: yellowgreen; border: 4px solid yellowgreen; font-size: 125%">Contacto</button>
+			<button type="button" class="btnlink displayFont">Contacto</button>
 		
 			</div>
 			
-			<div class="col-md-5" style="right: 0%; text-align: right;">
+			<div class="col-md-5" style="padding-right: 0px; margin-right: 3%; text-align: right; ">
 			
-			<button style="height: 3em; padding-left: 2.5px; padding-right: 2.5px; " type="button" role="link" onclick="window.location='https://www.instagram.com/facu.sharry/'" class="btn btn-link">
+			<button style="height: 3em; padding-left: 2.5px; padding-right: 2.5px;" type="button" role="link" onclick="window.location='https://www.instagram.com/facu.sharry/'" class="btn btn-link">
 
-			<img title="Instagram" src="assets/instagram.png" alt="Logo Instagram">
+			<img title="Instagram" src="assets/instagramw.png" alt="Logo Instagram">
 
 			</button>
 			
 			<button style="height: 3em; padding-left: 2.5px; padding-right: 0px; " type="button" role="link" onclick="window.location='https://www.linkedin.com/in/facundo-sharry-6748021b9/'" class="btn btn-link">
 			
-			<img style="" title="Linkedin" src="assets/linkedin.png" alt="Logo Linkedin">
+			<img style="" title="Linkedin" src="assets/linkedinw.png" alt="Logo Linkedin">
 		
 			</button>
 			
-			<button style="height: 3em; padding-left: 0px; padding-right: 0px;" type="button" role="link" onclick="window.location='https://github.com/Hakush'" class="btn btn-link zeropadzeromargtopbot">
+			<button style="height: 3em; padding-left: 0px; padding-right: 0px;" type="button" role="link" onclick="window.location='https://github.com/Hakush'" class="btn btn-link" id="zeropadmargtopbot">
 				
 			<img style="" title="Github" src="assets/github.png" alt="Logo Github">
 		
 			</button>
 			
-			<button type="button" class="btn btn-light" style="margin-right: 5%; font-size: 1.25em; height: 2em; background-color: rgba(125, 0, 150,1); border-color: rgba(125, 0, 150,1); color: yellowgreen;">Login</button></div>
+			<button type="button" class="btn btn-light" style="margin-right: 1% ;font-size: 1.25em; height: 2em; background-color: rgba(125, 0, 150,1); border-color: rgba(125, 0, 150,1); color: yellowgreen;">Login</button></div>
 			</div>
 	</nav>
 	
 	</header>
 
-	<!--Pongo un section de class wrapper que rodea todo el fondo con un color negro algo transparente para darle un efecto oscuro y de fondo a la imagen de fondo, sin afectar la barra de nav (o el footer si lo pudiese arreglar, por ahora lo incluye)-->
-	<section class="wrapper backgroundopacity">
-			<!--3 br para hacer espacio entre la navbar y la siguiente seccion, TODO: que detecte automaticamente de iniciar la siguiente seccion despues de la navbar-->
-			<br><br>
+	<!--Section WRAPPER: wraps main and sidebar-->
+	<section class="wrapper">
 
 		<!--Section MAIN: centered text is in here, except footer, header and sidebar(if i wanted to put one)-->
 		<section class="main"> 
+
 			<!--1st article(article 1): Foto de Perfil + Titulo(nombre)-->
 			<article style="text-align: center;">
-				<p>
-				<h1>
-					<img title="Foto de Perfil" style="width: 5em; margin-left: -5%;" src="assets/perfil3.png" alt="Foto de Perfil">
-					<span class="displayFont" style="margin-left: 3%;"><i>Facundo Sharry</i></span>
+				<!--<img title="Foto de Perfil" class="perfil" style="width: 15%; margin-left: -8%; display: inline-block; position: absolute; left: 20%;" src="assets/perfil3.png" alt="Foto de Perfil">-->
+				<div style="display: inline-block; text-align: left;">
+					
+					<h1 style="margin-left: 3%;">
+					<img title="Foto de Perfil" class="perfil" style="width: 5em; margin-left: -5%;" src="assets/perfil3.png" alt="Foto de Perfil">
+					<i>Facundo Sharry</i>
 				</h1>
 
 				<!--NOTES: to align it in the center but at the left of the center, you need to first text align center the main div/section and then in the next div/span/ul add inline block + text align left property-->
@@ -131,7 +130,7 @@
 					<li>Cordoba (Argentina)
 					<li> <a style="text-decoration: none;" target="_blank" href="https://linktr.ee/facundosharry"> Info. de contacto </a>
 				</ul>
-				</p>
+			</div>
 			</article>
 
 			<!--hr pone una linea entre secciones para separarlas y que quede mas elegante-->
@@ -158,79 +157,96 @@
 
 			<hr>
 
-			<!--2nd Article(article 2): Experiencia-->
+			<!--3rd Article(article 3): Experiencia-->
 			<article style="text-align: center;">
 				<p>
 				<h2>Experiencia</h2>
 				<ul type="circle" style="display: inline-block; text-align: left;">
 					<li><strong>Puesto:</strong> Ayudante de armado y reparación de pc (Emprendimiento)
-					<li><strong>Tareas realizadas:</strong> Instalación de OS, software, conexión de cables/componentes, <br>
+					<ul type="square"><li><strong>Tareas realizadas:</strong> Instalación de OS, software, conexión de cables/componentes, <br>
 					atención al ciente, caja, diseño gráfico y publicidad
 					<li><strong>Referencia:</strong> Patricio Oliva 3515452149
 					<div style="opacity: 80%; text-align: center;">[2017-actualidad]</div>
+					</ul>
 				</ul>
 				</p>
 			</article>
 
 			<hr>
 
-			<!--3rd Article(article 3): Formación -->
-			<article style="text-align: center;">
-
+			<!--4th Article(article 4): Formación -->
+			<article class="container-fluid" style="text-align: center;">
 				<h2>Formación</h2>
-				<ul type="circle" style="display: inline-block; text-align: left;">
-					<li><strong>Titulo Secundario:</strong> Bachiller especializado en Ciencias Sociales<br>
-					Otorgado por Ipem Independencia 97 en el 2020
-					<!--TODO: Barra de progreso en 30%, indicando 7 materias de 27-->
-					<p><li><strong>Terciario/Universitario:</strong> Estudiante de 2do año de la carrera de Lic. en <br>
-					Ciencias de la Computación, FAMAF, UNC. (Progreso 30%, Materias 7/26, Promedio: 8.86)</p>
-	    		</ul>
-				
+				<div class="row align-items-center" style="text-align: center;">
+
+					<div class="col-md"></div>
+
+					<div class="col-md-6">
+
+					<ul type="circle" style="display: inline-block; text-align: left;">
+						<li><strong>Titulo Secundario:</strong> Bachiller especializado en Ciencias Sociales Otorgado por Ipem Independencia 97 en el 2020
+						<!--TODO: Barra de progreso en 30%, indicando 7 materias de 27-->
+						<p><li><strong>Terciario/Universitario:</strong> Estudiante de 2do año de la carrera de Lic. en Ciencias de la Computación, FAMAF, UNC. (Progreso 30%, Materias 7/26, Promedio: 8.86)</p>
+	    			</ul>
+
+					</div>
+
+					<div class="col-md"></div>
+
+				</div>
 			</article>
 
 			<hr>
 
-			<!--4th Article(article 4): Hard and soft skills -->
+			<!--5th Article(article 5): Hard and soft skills -->
 			<article style="text-align: center;">
 
 				<h2>Hard and Soft Skills</h2>
-				<div><ul type="circle" style="display: inline-block; text-align: left;">
-
-					<li>Adobe photoshop, premiere, word, excel
-					<li>Inglés bueno
-
-					</ul></div>
+				<div class="container-fluid">
+					<div class="row align-items-center">
+						<div class="col-sm">ADOBE PHOTOSHOP</div>
+						<div class="col-sm">ADOBE PREMIERE PRO</div>
+						<div class="col-sm">OFFICE 2016</div>
+					</div>
+					<div class="row align-items-center">
+						<div class="col-sm">Haskell</div>
+						<div class="col-sm">Inglés bueno</div>
+						<div class="col-sm">C</div>
+					</div>
+				</div>
 
 			</article>
 
 				<hr>
 
-			<!--4th Article(article 4): Proyectos -->
+			<!--6th Article(article 6): Proyectos -->
 			<article style="text-align: center;">
 
 				<h2>Proyectos</h2>
 				<div><ul type="circle" style="display: inline-block; text-align: left;">
 
-					<li>Adobe photoshop, premiere, word, excel
+					<li>Portfolio, Tech used: html, css (bootstrap), angular, javascript, java, heroku.
+					<li>Animated gif of nyancat made in Assembly (aarch64 architecture with qemu for emulating a 640x480 display) 
 
 					</ul></div>
 
-				</article>
+			</article>
 		</section>
 
-	<aside></aside>
+		<aside></aside>
+	</section>
 
 	<!-- Last section/article: footer, usually contains contact information -->
 	<footer>
 
 		<div class="bottomWindow">
-			<div class="container">
-				<br>
-				<div class="row">
+			<div class="container-fluid">
+				
+				<div class="row align-items-center" style="text-align: center;">
 		
-			  		<div class="col-md-6" align="center"> <a style="text-decoration: none; color: aliceblue;" target="_blank" title="Enviar Mail" href="mailto:facundo.sharry@gmail.com"> facundo.sharry@gmail.com </a> </div>
+			  		<div class="col-md-6"> <a style="text-decoration: none; color: aliceblue;" target="_blank" title="Enviar Mail" href="mailto:facundo.sharry@gmail.com"> facundo.sharry@gmail.com </a> </div>
 		
-			  		<div class="col-md-6" align="center"> <a style="text-decoration: none; color: aliceblue;" target="_blank" title="Enviar Mensaje" href="https://api.whatsapp.com/send?phone=5493547563095">(+54 9)3547 563095</a> </div>
+			  		<div class="col-md-6"> <a style="text-decoration: none; color: aliceblue;" target="_blank" title="Enviar Mensaje" href="https://api.whatsapp.com/send?phone=5493547563095">(+54 9)3547 563095</a> </div>
 
 					<br><br>
 
@@ -250,7 +266,6 @@
 
 	</footer>
 
-	</section>
 
 		<!--Javascript importing of the bootstrap framework -->
 		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin= "anonymous"></script>

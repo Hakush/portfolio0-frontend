@@ -4,48 +4,32 @@
 }
 
 body {
-  background-color: rgb(197, 153, 255);
-  color: yellowgreen;
-  font-family: Lato, sans-serif, monospace;
+  /*background-color: rgba(197, 153, 255,1);*/
+  background-color: rgb(112, 84, 150);
+  background-repeat:repeat-x ;
+  color: rgb(204, 190, 0);
   background-image: url(assets/mosaicofondo.png);
   background-attachment: scroll;
+  font-size: 110%;
   line-height: 150%;
-}
-
-.backgroundopacity {
-  border: 0px solid rgba(25, 0, 99,0.5);
   text-align: left;
-  background: rgba(0, 0, 0, 0.5);
-  color: rgb(204, 190, 0);
-  font-size: 1.25em;
-  margin-bottom: 0;
-  padding-bottom: 0;
 }
 
 .topWindow {
-  /*background-image:;*/
-  /*border: 2.5px solid rgba(25, 0, 99,0.5);*/
-  border-top: 0em;
-  border-left: 0em;
-  border-right: 0em;
-  border-bottom: 0.05em solid rgba(25, 0, 99,0.5);
+  border: 0 0 0.05em solid rgba(25, 0, 99,0.5) 0;
   text-align: left;
-  background: rgba(65, 0, 109,0.7);
+  /*background: rgba(65, 0, 109,0.7);*/
+  background: rgba(37, 1, 61, 0.7);
+  backdrop-filter: blur(5px);
   font-weight: bold;
   color: yellowgreen;
-  margin-top: 0em;
-  margin-left: 0em;
-  margin-right: 0em;
-  margin-bottom: 0em;
-  padding-bottom: 0.3em;
-  padding-top: 0.3em;
-  padding-left: 0em;
-  padding-right: 0em;
+  margin: 0 0 0 0;
+  padding: 0.3em 0% 0.3em 0;
   text-transform: uppercase;
 }
 
 #navbar {
-  position: fixed;
+  position: static;
   top: 0em;
   width: 100%;
 }
@@ -57,87 +41,62 @@ body {
   color: white;
   margin-top: 0;
   padding-top: 0;
+  backdrop-filter: blur(5px);
 }
 
-.enlace {
+.imglink {
   display:inline;
-  border:0;
-  padding:5%;
-  margin:0%;
+  border:2px solid;
+  border-color: transparent;
+  padding: 3%;
+  margin:0% 0%;
   text-decoration:none;
   background:none;
-  color:rgb(204, 190, 0);
-  font-family: arial, sans-serif;
-  font-size: 1em;
-  line-height:1em;
 }
 
-.enlace:hover {
+.imglink:hover {
   text-decoration:none;
-  color:rgb(204, 190, 0);
+  cursor:pointer;
+  border-color:rgb(204, 190, 0);
+  background-color: black ;
+}
+
+.btnlink {
+  display:inline;
+  margin: 0%;
+  padding: 5%;
+  text-decoration:none;
+  background:none;
+  color: yellowgreen; 
+  border: 4px solid yellowgreen; 
+  font-size: 125%;
+  line-height:1em;
+  border-radius: 5%;
+}
+
+.btnlink:hover {
+  text-decoration:none;
+  color:yellowgreen;
   cursor:pointer;
   /*text-shadow: 3px 3px 2px black;*/
   border-radius: 50px;
   background-color: black;
 }
 
-.parent {
-  position: relative;
-  top: 0;
-  left: 0;
-}
-.image1 {
-  position: relative;
-  top: 0;
-  left: 0;
-  /*border: 1px red solid;*/
-}
-.image2 {
-  position: absolute;
-  top: 8%;
-  left: 38.5%;
-  height: 38.5%;
-  /*border: 1px green solid;*/
+.btn-link:hover {
+  text-decoration: none;
+  border-color:rgb(204, 190, 0);
+  outline-color: rgb(204, 190, 0);
 }
 
-.Vcenter {
-  margin: 0;
-  position: absolute;
-	top: 50%;
-	-ms-transform: translateY(-50%);
-	transform: translateY(-50%);
-  right: 0%;
-}
-
-.VcenterCont {
-  position: relative;
+.btn-light:hover {
+  border-color: yellowgreen !important;
 }
 
 img {
   max-width: 100%;
   max-height: 100%;
   object-fit: contain;
-}
-
-.portada {
-  width: 100%;
-  align-self: center;
-}
-
-.perfil {
-  width: 10%;
-}
-
-.center {
-  text-align: center; width:50%;  display: inline-block;
-}
-
-.right {
-  text-align: right; width:50%;  display: inline-block;
-}
-
-.left { 
-  text-align: left; width:49%;  display: inline-block;
 }
 
 h1, h2 {
@@ -150,13 +109,41 @@ h1, h2 {
   
 }
 
-.zeropadzeromargtopbot {
-  margin-top: 0em !important;
-  margin-bottom: 0em !important;
-  padding-top: 0em !important;
-  padding-bottom: 0em !important;
+#zeropadmargtopbot {
+  margin: 0;
+  padding: 0;
 }
 
-#name {
-  text-overflow: ellipsis;
+/* Poner una imagen por encima de otra manualmente (raro)
+.parent {
+  position: relative;
+  top: 0;
+  left: 0;
 }
+.image1 {
+  position: relative;
+  top: 0;
+  left: 0;
+  /*border: 1px red solid;
+}
+.image2 {
+  position: absolute;
+  top: 8%;
+  left: 38.5%;
+  height: 38.5%;
+  /*border: 1px green solid;
+} */
+
+/* Centrar verticalmente manualmente
+.Vcenter {
+  margin: 0;
+  position: absolute;
+	top: 50%;
+	-ms-transform: translateY(-50%);
+	transform: translateY(-50%);
+  right: 0%;
+}
+
+.VcenterCont {
+  position: relative;
+}*/
