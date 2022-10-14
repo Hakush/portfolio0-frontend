@@ -114,6 +114,17 @@ h1, h2 {
   padding: 0;
 }
 
+.loginForm {
+  width: 25%;
+  border: 1px solid green;
+  margin: 20px;
+  padding: 20px;
+}
+
+.loginLabel {
+  font-size: 12px;
+}
+
 /* Poner una imagen por encima de otra manualmente (raro)
 .parent {
   position: relative;
