@@ -15,6 +15,9 @@
 		<meta name="keywords" content="Portfolio, design, webpage, Facundo Sharry, desarrollo, pagina web, Argentina Programa" />
 		<!--Importing of the bootstrap css framework -->
 		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&family=Silkscreen&display=swap" rel="stylesheet">
 		<!--Importing of my own css stylesheet/code-->
 		<link href="style.css" rel="stylesheet">
 		<!--Icon next to the title of the webpage TODO: make it work-->
@@ -137,38 +140,71 @@
 			<hr>
 
 			<!--2nd Article(article 2): Informacion personal-->
-			<article style="text-align: center;">
+			<article class="container-fluid" style="text-align: center;">
 				<p>
 				<h2>Informacion Personal</h2>
+
+				<div class="row align-items-center" style="text-align:center;">
+
+					<div class="col-md"></div>
+
+					<div class="col-md-5" style="text-align: center;">
+
 				<ul type="circle" style="display: inline-block; text-align: left;">
 					
-					<li><strong>Nombre completo:</strong> Facundo Nicolás Sharry Ferreira 
+					<li><strong>Nombre:</strong> Facundo Sharry
 					<li><strong>Edad:</strong> 21 años
-					<li><strong>DNI:</strong> 47635191
-					<li><strong>Fecha y lugar de Nacimiento:</strong> 29 de Junio de 2001 en San Justo, Buenos Aires
-					<li><strong>Nacionalidad:</strong> Argentino
-					<li><strong>Direccion:</strong> Santa Cruz 40, La Bolsa, Cordoba (CP: 5186)
+					<li><strong>Resido en:</strong> Cordoba, Argentina.
 					<li><strong>Nro. de Celular:</strong> (+54 9) 3547-563095
 					<li><strong>E-mail:</strong> facundo.sharry@gmail.com
 					
 				</ul>
+
+					</div>
+
+					<div class="col-md"></div>
+
+				</div>	
+
 				</p>
 			</article>
 
 			<hr>
 
 			<!--3rd Article(article 3): Experiencia-->
-			<article style="text-align: center;">
+			<article class="container-fluid" style="text-align: center;">
 				<p>
 				<h2>Experiencia</h2>
-				<ul type="circle" style="display: inline-block; text-align: left;">
-					<li><strong>Puesto:</strong> Ayudante de armado y reparación de pc (Emprendimiento)
-					<ul type="square"><li><strong>Tareas realizadas:</strong> Instalación de OS, software, conexión de cables/componentes, <br>
-					atención al ciente, caja, diseño gráfico y publicidad
-					<li><strong>Referencia:</strong> Patricio Oliva 3515452149
-					<div style="opacity: 80%; text-align: center;">[2017-actualidad]</div>
+
+				<div class="row align-items-center" style="text-align: center;">
+
+					<div class="col-md"></div>
+
+					<div class="col-md-5">
+
+					<ul type="circle" style="display: inline-block; text-align: left;">
+						<li><strong>Puesto:</strong> Armado y reparación de pc (Emprendimiento)
+						<ul type="square"><li><strong>Tareas realizadas:</strong> Instalación de OS, software, conexión de cables/componentes,
+						atención al ciente, caja, diseño gráfico y publicidad
+						<li><strong>Referencia:</strong> Patricio Ferreira 351 5452149
+						<div style="opacity: 80%; text-align: center;">[2017-actualidad]</div>
+						</ul>
 					</ul>
-				</ul>
+					<ul type="circle" style="display: inline-block; text-align: left;">
+						<li><strong>Puesto:</strong> Armado y reparación de PC (trabajo voluntario)
+						<ul type="square"><li><strong>Tareas realizadas:</strong> Instalación de OS, software, conexión de cables/componentes, <br>
+						atención al ciente, caja, diseño gráfico y publicidad </ul>
+						<ul type="square"><li><strong>Lugar:</strong> Secretaria de Extension FAMAF - UNC </ul>
+						<ul type="square"><li><strong>Referencia:</strong> Marcos Oliva 351 2181249 </ul>
+						<div style="opacity: 80%; text-align: center;">[08/2022 - actualidad]</div>
+						
+					</ul>
+					</div>
+
+					<div class="col-md"></div>
+
+				</div>
+
 				</p>
 			</article>
 
@@ -181,12 +217,13 @@
 
 					<div class="col-md"></div>
 
-					<div class="col-md-6">
+					<div class="col-md-5">
 
 					<ul type="circle" style="display: inline-block; text-align: left;">
 						<li><strong>Titulo Secundario:</strong> Bachiller especializado en Ciencias Sociales Otorgado por Ipem Independencia 97 en el 2020
 						<!--TODO: Barra de progreso en 30%, indicando 7 materias de 27-->
 						<p><li><strong>Terciario/Universitario:</strong> Estudiante de 2do año de la carrera de Lic. en Ciencias de la Computación, FAMAF, UNC. (Progreso 30%, Materias 7/26, Promedio: 8.86)</p>
+						<li><strong>Curso Fullstack Developer:</strong> Argentina Programa, stack MEAN.
 	    			</ul>
 
 					</div>
@@ -204,15 +241,25 @@
 				<h2>Hard and Soft Skills</h2>
 				<div class="container-fluid">
 					<div class="row align-items-center">
-						<div class="col-sm">ADOBE PHOTOSHOP</div>
-						<div class="col-sm">ADOBE PREMIERE PRO</div>
-						<div class="col-sm">OFFICE 2016</div>
+						<div class="col-sm"></div>
+						<div class="col-sm"> <div class="row align-items-center">
+												<div class="col-sm">Ingles</div>
+												<div class="col-sm">GIT</div>
+												<div class="col-sm">C</div>
+											</div>
+											<div class="row align-items-center">
+											<div class="col-sm">HTML,CSS,JS</div>
+											<div class="col-sm">JAVA</div>
+											<div class="col-sm">SCRUM</div>
+											</div>
+						</div>
+						<div class="col-sm"></div>
 					</div>
-					<div class="row align-items-center">
-						<div class="col-sm">Haskell</div>
-						<div class="col-sm">Inglés bueno</div>
-						<div class="col-sm">C</div>
-					</div>
+				<!--    <div class="row align-items-center">
+						<div class="col-sm">HTML,CSS,JS</div>
+						<div class="col-sm">JAVA</div>
+						<div class="col-sm">SCRUM</div>
+					</div> -->
 				</div>
 
 			</article>
@@ -263,14 +310,9 @@
 
 				<div class="row">
 					
-					<div class="col-md" align="center">
+					<div class="col-md-1" align="center">
 						<br>
-						<form id="loginForm" >
-							<input type="text" id="user" placeholder="Usuario" maxlength="512" name="User" size="25">
-							<label for="pass">Contraseña</label>
-							<input type="text" id="pass" placeholder="Contraseña" maxlength="512" name="Password" size="25">
-							<input type="submit" value="Ingresar" class="sendformhdr" style="font-family: Arial, sans-serif; font-size: 12px;">
-						</form> 
+						
 
 				</div>
 
@@ -278,6 +320,13 @@
 		</div>
 
 	</footer> <span id="idfooter"/>
+
+	<form class="loginForm" >
+							<input type="text" id="user" placeholder="Usuario" maxlength="512" name="User" size="25">
+							<label for="pass"></label>
+							<input type="text" id="pass" placeholder="Contraseña" maxlength="512" name="Password" size="25">
+							<input type="submit" value="Ingresar" class="sendformhdr" style="font-size: 12px;">
+	</form> 
 
 
 		<!--Javascript importing of the bootstrap framework -->
