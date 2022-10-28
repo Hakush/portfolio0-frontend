@@ -84,7 +84,7 @@
 		
 			</div>
 			
-			<div class="col-md-5" style="padding-right: 0px; margin-right: 3%; text-align: right; ">
+			<div class="col-md-3" style="padding-right: 0px; margin-right: 3%; text-align: right; ">
 			
 			<button style="height: 3em; padding-left: 2.5px; padding-right: 2.5px;" type="button" role="link" onclick="window.location='https://www.instagram.com/facu.sharry/'" class="btn btn-link">
 
@@ -182,20 +182,19 @@
 
 					<div class="col-md-5">
 
-					<ul type="circle" style="display: inline-block; text-align: left;">
+					<ul type="square" style="display: inline-block; text-align: left;">
 						<li><strong>Puesto:</strong> Armado y reparación de pc (Emprendimiento)
-						<ul type="square"><li><strong>Tareas realizadas:</strong> Instalación de OS, software, conexión de cables/componentes,
+						<li><strong>Tareas realizadas:</strong> Instalación de OS, software, conexión de cables/componentes,
 						atención al ciente, caja, diseño gráfico y publicidad
 						<li><strong>Referencia:</strong> Patricio Ferreira 351 5452149
 						<div style="opacity: 80%; text-align: center;">[2017-actualidad]</div>
-						</ul>
 					</ul>
-					<ul type="circle" style="display: inline-block; text-align: left;">
+					<ul type="square" style="display: inline-block; text-align: left;">
 						<li><strong>Puesto:</strong> Armado y reparación de PC (trabajo voluntario)
-						<ul type="square"><li><strong>Tareas realizadas:</strong> Instalación de OS, software, conexión de cables/componentes, <br>
-						atención al ciente, caja, diseño gráfico y publicidad </ul>
-						<ul type="square"><li><strong>Lugar:</strong> Secretaria de Extension FAMAF - UNC </ul>
-						<ul type="square"><li><strong>Referencia:</strong> Marcos Oliva 351 2181249 </ul>
+						<li><strong>Tareas realizadas:</strong> Instalación de OS, software, conexión de cables/componentes, <br>
+						atención al ciente, caja, diseño gráfico y publicidad
+						<li><strong>Lugar:</strong> Secretaria de Extension FAMAF - UNC 
+						<li><strong>Referencia:</strong> Marcos Oliva 351 2181249
 						<div style="opacity: 80%; text-align: center;">[08/2022 - actualidad]</div>
 						
 					</ul>
@@ -291,9 +290,9 @@
 				
 				<div class="row align-items-center" style="text-align: center;">
 		
-			  		<div class="col-md-6"> <a style="text-decoration: none; color: aliceblue;" target="_blank" title="Enviar Mail" href="mailto:facundo.sharry@gmail.com"> facundo.sharry@gmail.com </a> </div>
+			  		<div class="col-md-6"> <a style="text-decoration: none; color: aliceblue;" target="_blank" title="Enviar Mail" href="mailto:facundo.sharry@gmail.com"> Enviame un mail! </a> </div>
 		
-			  		<div class="col-md-6"> <a style="text-decoration: none; color: aliceblue;" target="_blank" title="Enviar Mensaje" href="https://api.whatsapp.com/send?phone=5493547563095">(+54 9)3547 563095</a> </div>
+			  		<div class="col-md-6"> <a style="text-decoration: none; color: aliceblue;" target="_blank" title="Enviar Mensaje" href="https://api.whatsapp.com/send?phone=5493547563095">Enviame un wsp!</a> </div>
 
 					<br><br>
 
@@ -322,10 +321,16 @@
 	</footer> <span id="idfooter"/>
 
 	<form class="loginForm" >
-							<input type="text" id="user" placeholder="Usuario" maxlength="512" name="User" size="25">
+							<!--el label es el nombre que va a la izquierda del input-->
+							<input type="text" id="user" placeholder="Usuario" maxlength="512" name="User" size="25"></input>
+
 							<label for="pass"></label>
-							<input type="text" id="pass" placeholder="Contraseña" maxlength="512" name="Password" size="25">
-							<input type="submit" value="Ingresar" class="sendformhdr" style="font-size: 12px;">
+							<input type="text" id="pass" placeholder="Contraseña" maxlength="512" name="Password" size="25"></input>
+
+							<br><br>
+
+							<label for="login"></label>
+							<input type="submit" id="login" value="ingresar" class="sendformhdr" style="font-size: 16px;"></input>
 	</form> 
 
 
