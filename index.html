@@ -117,22 +117,47 @@
 		<section class="main"> 
 
 			<!--1st article(article 1): Foto de Perfil + Titulo(nombre)-->
-			<article style="text-align: center;">
+			<article style="text-align: center; margin-top: 20px;">
 				<!--<img title="Foto de Perfil" class="perfil" style="width: 15%; margin-left: -8%; display: inline-block; position: absolute; left: 20%;" src="assets/perfil3.png" alt="Foto de Perfil">-->
+				
 				<div style="display: inline-block; text-align: left;">
-					
+					<!-- Previous implementation
 					<h1 style="margin-left: 3%;">
 					<img title="Foto de Perfil" class="perfil" style="width: 5em; margin-left: -5%;" src="assets/perfil3.png" alt="Foto de Perfil">
 					<i>Facundo Sharry</i>
 				</h1>
-
-				<!--NOTES: to align it in the center but at the left of the center, you need to first text align center the main div/section and then in the next div/span/ul add inline block + text align left property-->
-				<ul type="circle" style="display: inline-block; text-align: left;">
+				-->
+				<div class="card bg-dark mb-3" style="max-width: 540px;">
+  				<div class="row g-0">
+   				<div class="col-md-4">
+   			   	<img src="assets/perfil3.png" class="img-fluid rounded-start" alt="Foto de Perfil">
+   				</div>
+   				<div class="col-md-8">
+   				  <div class="card-body">
+    			   <h2 class="card-title">Facundo Sharry</h2>
+      			  <p class="card-text">
+      			  	<ul type="circle" style="display: inline-block; text-align: left;">
 					<li> Fullstack developer junior, estudiante de <br> 
 					Licenciatura en Ciencias de la Computación(Famaf-UNC)
 					<li>Cordoba (Argentina)
 					<li> <a style="text-decoration: none;" href="#idfooter"> Contactame </a>
 				</ul> <!-- target="_blank" hace que la pagina se abra en otra pestaña-->
+      			  </p>
+       			  <p class="card-text"><small class="text-muted"></small></p>
+    			  </div>
+    			</div>
+  				</div>
+				</div>
+
+				<!--NOTES: to align it in the center but at the left of the center, you need to first text align center the main div/section and then in the next div/span/ul add inline block + text align left property-->
+				<!-- previous implementation 
+				<ul type="circle" style="display: inline-block; text-align: left;">
+					<li> Fullstack developer junior, estudiante de <br> 
+					Licenciatura en Ciencias de la Computación(Famaf-UNC)
+					<li>Cordoba (Argentina)
+					<li> <a style="text-decoration: none;" href="#idfooter"> Contactame </a> 
+				</ul> --> <!-- target="_blank" hace que la pagina se abra en otra pestaña-->
+
 			</div>
 			</article>
 
@@ -191,8 +216,7 @@
 					</ul>
 					<ul type="square" style="display: inline-block; text-align: left;">
 						<li><strong>Puesto:</strong> Armado y reparación de PC (trabajo voluntario)
-						<li><strong>Tareas realizadas:</strong> Instalación de OS, software, conexión de cables/componentes, <br>
-						atención al ciente, caja, diseño gráfico y publicidad
+						<li><strong>Tareas realizadas:</strong> Instalación de OS, software, conexión de cables/componentes. <br>
 						<li><strong>Lugar:</strong> Secretaria de Extension FAMAF - UNC 
 						<li><strong>Referencia:</strong> Marcos Oliva 351 2181249
 						<div style="opacity: 80%; text-align: center;">[08/2022 - actualidad]</div>
@@ -300,8 +324,8 @@
 
 					<div class="col-md" align="center"> 
 						<form>
-							<input type="text" placeholder="Dejá tu feedback" maxlength="512" name="feedback" size="37">
-							<input type="submit" value="Enviar" class="sendformhdr" style="font-family: Arial, sans-serif; font-size: 12px;">
+							<textarea type="text" placeholder="Dejá tu feedback" maxlength="512" name="feedback" size="37"></textarea>
+							<input type="submit" value="Enviar" class="sendformhdr" style="font-family: Arial, sans-serif; font-size: 12px;"></input>
 						</form> 
 					</div>
 
@@ -325,12 +349,12 @@
 							<input type="text" id="user" placeholder="Usuario" maxlength="512" name="User" size="25"></input>
 
 							<label for="pass"></label>
-							<input type="text" id="pass" placeholder="Contraseña" maxlength="512" name="Password" size="25"></input>
+							<input type="Password" id="pass" placeholder="Contraseña" maxlength="512" name="Password" size="25"></input>
 
 							<br><br>
 
 							<label for="login"></label>
-							<input type="submit" id="login" value="ingresar" class="sendformhdr" style="font-size: 16px;"></input>
+							<input type="submit" id="login" value="Login" class="sendformhdr" style="font-size: 16px; width: 300px"></input>
 	</form> 
 
 
