@@ -123,13 +123,39 @@ h1, h2 {
   border: 1px solid green;
   margin: 20px;
   padding: 20px;
+  background: black;
 }
 
 .loginLabel {
   font-size: 12px;
+  border: 1px solid #fff;
+  background: #fff;
 }
 
-form {
+input, textarea {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+}
+
+textarea {
+  max-height: 300px;
+}
+
+input:focus {
+  border:1px solid #000000;
+}
+
+input[type="submit"] {
+  margin-bottom: 0;
+  background: yellowgreen;
+  border: none;
+}
+
+input[type="submit"]:hover {
+  border: 1.5px solid lightcyan;
+  /*cursor: pointer;*/
 }
 
 /* Poner una imagen por encima de otra manualmente (raro)
