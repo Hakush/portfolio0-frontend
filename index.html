@@ -344,17 +344,23 @@
 
 	</footer> <span id="idfooter"/>
 
-	<form class="loginForm" >
-							<!--el label es el nombre que va a la izquierda del input-->
-							<input type="text" id="user" placeholder="Usuario" maxlength="512" name="User" size="25"></input>
+	<form class="container-fluid loginForm" >
+		<div class="row">
+		<col-md-4></col-md-4>
+		<col-md-4>
+		<!--el label es el nombre que va a la izquierda del input-->
+		<input type="text" id="user" placeholder="Usuario" maxlength="512" name="User" size="15%"></input>
 
-							<label for="pass"></label>
-							<input type="Password" id="pass" placeholder="Contraseña" maxlength="512" name="Password" size="25"></input>
+		<label for="pass"></label>
+		<input type="Password" id="pass" placeholder="Contraseña" maxlength="512" name="Password" size="15%"></input>
 
-							<br><br>
+		<br><br>
 
-							<label for="login"></label>
-							<input type="submit" id="login" value="Login" class="sendformhdr" style="font-size: 16px; width: 300px"></input>
+		<label for="login"></label>
+		<input type="submit" id="login" value="Login" class="sendformhdr" style="font-size: 16px; width: 300px"></input>
+		</col-md-4>
+		<col-md-4></col-md-4>
+		</div>
 	</form> 
 
 
