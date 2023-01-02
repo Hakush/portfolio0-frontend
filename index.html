@@ -46,67 +46,48 @@
 	
 	<!--HEADER: The first and most important section of the page, usually the navigation bar -->
 	<header>
-	<!--Navigation Bar TODO: responsiveness, always on top except on mobile-->
-	<nav id="navbar" class="topWindow container-fluid displayFont">
-		<div class="row align-items-center displayFont" style="margin: 0px 0px; padding-right:0px; margin-right:0px" align="center">
-			
-			<div class="col-md-2" >
-				
-			<button type="button" class="imglink" role="link" onclick="window.location='https://www.argentina.gob.ar/produccion/transformacion-digital-y-economia-del-conocimiento/argentina-programa'">
-				
-			<img style="left: 0%; text-align: left;height: 2em; width: 20em;" title="Curso Argentina Programa" src="assets/APLogo-20-200.png" alt="Logo">
-		
-			</button>
-		
-			</div>
-			
-			<div class="col-md">
-				
-			<button type="button" class="btnlink displayFont" role="link" onclick="window.location='inicio.html'">Inicio</button>
-		
-			</div>
-			
-			<div class="col-md">
-				
-			<button type="button" class="btnlink displayFont" role="link" onclick="window.location='index.html'">Portfolio</button>
-		
-			</div>
-			
-			<div class="col-md">
-				
-			<button type="button" class="btnlink displayFont">About</button>
-		
-			</div>
-			
-			<div class="col-md">
-				
-			<button type="button" class="btnlink displayFont">Contacto</button>
-		
-			</div>
-			
-			<div class="col-md-3" style="padding-right: 0px; margin-right: 3%; text-align: right; ">
-			
-			<button style="height: 3em; padding-left: 2.5px; padding-right: 2.5px;" type="button" role="link" onclick="window.location='https://www.instagram.com/facu.sharry/'" class="btn btn-link">
 
-			<img title="Instagram" src="assets/instagramw.png" alt="Logo Instagram">
+		<nav class="navbar navbar-expand-lg bg-dark">
+			<div class="container-fluid">
+			  <a class="navbar-brand" style="max-width: 150px;" href="https://www.argentina.gob.ar/produccion/transformacion-digital-y-economia-del-conocimiento/argentina-programa">
+				  <img style="width: 50; height:20;" title="Curso Argentina Programa" src="assets/APLogo-20-200.png" alt="Logo">
+			  </a>
+			  <button class="navbar-toggler"type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon bg-warning"></span>
+			  </button>
+			  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav me-auto mb-2 mb-lg-0 displayFont">
+				  <li class="nav-item">
+					<a class="nav-link active link-danger" aria-current="page" href="#">Home</a>
+				  </li>
+				  <li class="nav-item">
+					<a class="nav-link active link-danger" aria-current="page" href="#">Portfolio</a>
+				  </li>
+				  <li class="nav-item">
+					<a class="nav-link active link-danger" aria-current="page" href="#">About</a>
+				  </li>
+				  <li class="nav-item">
+					<a class="nav-link active link-danger" aria-current="page" href="#">Contact</a>
+				  </li>
+				</ul>
 
-			</button>
-			
-			<button style="height: 3em; padding-left: 2.5px; padding-right: 0px; " type="button" role="link" onclick="window.location='https://www.linkedin.com/in/facundo-sharry-6748021b9/'" class="btn btn-link">
-			
-			<img style="" title="Linkedin" src="assets/linkedinw.png" alt="Logo Linkedin">
-		
-			</button>
-			
-			<button style="height: 3em; padding-left: 0px; padding-right: 0px;" type="button" role="link" onclick="window.location='https://github.com/Hakush'" class="btn btn-link" id="zeropadmargtopbot">
+				<span class="d-flex">
+					<a class="navbar-brand" style="max-width: 35px;" href="https://www.instagram.com/facu.sharry/">
+						<img title="Instagram" src="assets/instagramw.png" alt="Logo">
+					</a>
+					<a class="navbar-brand" style="max-width: 35px;" href="https://github.com/Hakush">
+						<img style="width: 50; height:5;" title="GitHub" src="assets/github.png" alt="Logo">
+					</a>
+					<a class="navbar-brand" style="max-width: 35px;" href="https://www.linkedin.com/in/facundo-sharry-6748021b9/">
+						<img style="width: 50; height:20;" title="Linkedin" src="assets/linkedinw.png" alt="Logo">
+					</a>
+				</span>
+				  
+				<button class="btn btn-outline-success d-flex" type="submit">Login</button>
 				
-			<img style="" title="Github" src="assets/github.png" alt="Logo Github">
-		
-			</button>
-			
-			<button type="button" class="btn btn-light" style="margin-right: 1% ;font-size: 1.25em; height: 2em; background-color: rgba(125, 0, 150,1); border-color: rgba(125, 0, 150,1); color: yellowgreen;">Login</button></div>
+			  </div>
 			</div>
-	</nav>
+		  </nav>
 	
 	</header>
 
@@ -118,15 +99,8 @@
 
 			<!--1st article(article 1): Foto de Perfil + Titulo(nombre)-->
 			<article style="text-align: center; margin-top: 20px;">
-				<!--<img title="Foto de Perfil" class="perfil" style="width: 15%; margin-left: -8%; display: inline-block; position: absolute; left: 20%;" src="assets/perfil3.png" alt="Foto de Perfil">-->
 				
-				<div style="display: inline-block; text-align: left;">
-					<!-- Previous implementation
-					<h1 style="margin-left: 3%;">
-					<img title="Foto de Perfil" class="perfil" style="width: 5em; margin-left: -5%;" src="assets/perfil3.png" alt="Foto de Perfil">
-					<i>Facundo Sharry</i>
-				</h1>
-				-->
+			<div style="display: inline-block; text-align: left;">
 				<div class="card bg-dark mb-3" style="max-width: 700px;">
   				<div class="row g-0">
    				<div class="col-md-4">
@@ -148,16 +122,6 @@
     			</div>
   				</div>
 				</div>
-
-				<!--NOTES: to align it in the center but at the left of the center, you need to first text align center the main div/section and then in the next div/span/ul add inline block + text align left property-->
-				<!-- previous implementation 
-				<ul type="circle" style="display: inline-block; text-align: left;">
-					<li> Fullstack developer junior, estudiante de <br> 
-					Licenciatura en Ciencias de la Computación(Famaf-UNC)
-					<li>Cordoba (Argentina)
-					<li> <a style="text-decoration: none;" href="#idfooter"> Contactame </a> 
-				</ul> --> <!-- target="_blank" hace que la pagina se abra en otra pestaña-->
-
 			</div>
 			</article>
 
@@ -165,35 +129,31 @@
 			<hr>
 
 			<!--2nd Article(article 2): Informacion personal-->
-			<article class="container-fluid" style="text-align: center;">
-				<p>
-				<h2>Informacion Personal</h2>
-
-				<div class="row align-items-center" style="text-align:center;">
-
-					<div class="col-md"></div>
-
-					<div class="col-md-5" style="text-align: center;">
-
-				<ul type="circle" style="display: inline-block; text-align: left;">
+			<article class="container-fluid">
+			<div class="row align-items-center">
+			<div class="col-md-4"></div>
+			<div class="col-md">
+			<div class="card text-center bg-dark" style="max-width:;">
+				<div class="card-header displayFont">
+				  <h3>Informacion Personal</h3>
+				</div>
+				<div class="card-body">
+				  <p class="card-text">
+					<ul type="circle" style="display: inline-block; text-align: left;">
 					
-					<li><strong>Nombre:</strong> Facundo Sharry
-					<li><strong>Edad:</strong> 21 años
-					<li><strong>Resido en:</strong> Cordoba, Argentina.
-					<li><strong>Nro. de Celular:</strong> (+54 9) 3547-563095
-					<li><strong>E-mail:</strong> facundo.sharry@gmail.com
-					
-				</ul>
-
-					</div>
-
-					<div class="col-md"></div>
-
-				</div>	
-
-				</p>
+						<li><strong>Nombre:</strong> Facundo Sharry
+						<li><strong>Edad:</strong> 21 años
+						<li><strong>Resido en:</strong> Cordoba, Argentina.
+						<li><strong>Nro. de Celular:</strong> (+54 9) 3547-563095
+						<li><strong>E-mail:</strong> facundo.sharry@gmail.com
+					</ul>
+				  </p>
+				</div>
+			</div>
+			</div>
+			<div class="col-md-4"></div>
+			</div>
 			</article>
-
 			<hr>
 
 			<!--3rd Article(article 3): Experiencia-->
