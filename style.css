@@ -18,6 +18,11 @@ body {
   font-family: 'Roboto Mono', monospace;
 }
 
+hr {
+  max-width: 700px;
+  color: black;
+}
+
 .topWindow {
   border: 0 0 0.05em solid rgba(25, 0, 99,0.5) 0;
   text-align: left;
