@@ -8,9 +8,12 @@ body {
   /*background-color: rgba(197, 153, 255,1);*/
   /*background-color: rgb(112, 84, 150);*/
   background-color: purple;
-  background-repeat:repeat-x ;
+  /*background-repeat:repeat-x;*/
+  /*background-repeat:repeat-y;*/
+  background-repeat: repeat;
   color: rgb(204, 190, 0);
-  background-image: url(assets/mosaicofondo.png);
+  background-image: url(assets/space_invaders.jpg);
+  background-size: contain;
   background-attachment: scroll;
   font-size: 110%;
   line-height: 150%;
@@ -19,7 +22,6 @@ body {
 }
 
 hr {
-  max-width: 700px;
   color: black;
 }
 
