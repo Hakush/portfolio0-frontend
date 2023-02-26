@@ -32,14 +32,6 @@
 			}
 		
 		</style> -->
-
-		<script src="index.js"></script>
-		<script src="package.json"></script>
-		<script src="tsconfig.json"></script>
-		<script src="lib/jquery-1.9.1.min.js"></script>
-		<script src="lib/bootstrap.min.js"></script>
-		
-
 </head>
 
 <!--BODY: The entire text and everything on the page is in here, background="" property sets an image as background-->
@@ -103,7 +95,12 @@
    				</div>
    				<div class="col-md-8">
    				  <div class="card-body">
-    			   <h2 class="card-title">Facundo Sharry <button class="bi bi-pencil-square btn btn-dark"></button></h2>
+    			   <h2 class="card-title" style="display: inline-block;">Facundo Sharry</h2>
+
+    			   <div class="btn-edit" style="display: inline-block;">
+    			   	<button class="bi bi-pencil-square btn btn-dark btn-right mb-2"></button>
+    			   </div>
+
       			  <p class="card-text">
       			  	<ul type="circle" style="display: inline-block; text-align: left;">
 					<li> Fullstack developer junior
@@ -197,20 +194,21 @@
 			<div class="row g-0">
 			<div class="card text-center bg-dark" style="max-width:700px;">
 				<div class="card-header displayFont pb-0">
-				  <h3 class="pb-0 mb-0" contenteditable = "true">Hard and soft skills <button class="bi bi-pencil-square btn btn-dark"></button></h3>
+				  <h3 class="pb-0 mb-0" id="title3">Hard and soft skills <button id="btn-edit3" class="bi bi-pencil-square btn btn-dark"></button></h3>
 				</div>
 				<div class="card-body py-0">
 				  <p class="card-text">
 					<div class="col-sm"></div>
-						<div class="col-sm"> <div class="row align-items-center">
-												<div class="col-sm">Ingles</div>
-												<div class="col-sm">GIT</div>
-												<div class="col-sm">C</div>
+						<div class="col-sm" contenteditable=false id="hard_and_soft_skills"> 
+											<div class="row align-items-center">
+												<div class="col-sm" id="skill1"></div>
+												<div class="col-sm" id="skill2"></div>
+												<div class="col-sm" id="skill3"></div>
 											</div>
 											<div class="row align-items-center">
-											<div class="col-sm">HTML,CSS,JS</div>
-											<div class="col-sm">JAVA</div>
-											<div class="col-sm">SCRUM</div>
+												<div class="col-sm" id="skill4"></div>
+												<div class="col-sm" id="skill5"></div>
+												<div class="col-sm" id="skill6"></div>
 											</div>
 						</div>
 					<div class="col-sm"></div>
@@ -353,6 +351,7 @@
 	<span id="idfooter">
 		<!--Javascript importing of the bootstrap framework -->
 		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin= "anonymous"></script>
+		<script src="index.js"></script>
 	
 
 </body>
