@@ -1,0 +1,68 @@
+{
+  "nombre": "Facundo Sharry",
+  "edad": "21 años",
+  "posicion": "Programador Full Stack Jr",
+  "posicion2": "Computer Science student at FaMAF-UNC",
+  "ubicacion": "Cordoba, Argentina",
+  "cellphone": "(+54 9) 3547-563095",
+  "email": "facundo.sharry@gmail.com",
+  "fotoPerfil": "../assets/img/foto-perfil.jpg",
+  "acercaDe": "",
+  "experiencias": [
+    {
+      "posicion": "Armado y reparacion de PC",
+      "compania": "",
+      "img": "#",
+      "descripcion": "Instalación de OS, software, conexión de cables/componentes, atención al ciente, caja, diseño gráfico y publicidad",
+      "referencia": "Patricio Ferreira 351 5452149",
+      "inicio": "2017",
+      "fin": "actualidad"
+    }
+  ],
+  "educaciones": [
+    {
+      "nivel": "Secundario",
+      "titulo": "Bachiller especializado en Ciencias Sociales",
+      "img": "../assets/img/UTN_logo.jpg",
+      "descripcion": "Bachiller especializado en Ciencias Sociales Otorgado por Ipem Independencia 97 en el 2020",
+      "institucion": "Ipem Independencia 97",
+      "inicio": "2018",
+      "fin": "2020"
+    },
+    {
+      "nivel": "Universitario",
+      "titulo": "Lic. en Ciencias de la Computación",
+      "img": "../assets/img/UTN_logo.jpg",
+      "descripcion": "Estudiante de 2do año de la carrera de Lic. en Ciencias de la Computación, FAMAF, UNC. (Progreso 30%, Materias 8/27, Promedio: 8.46)",
+      "institucion": "FAMAF, UNC",
+      "inicio": "2021",
+      "fin": "en progreso"
+    }
+  ],
+  "skills": [
+    {
+      "nombre": "Resolución de problemas",
+      "progreso": 75
+    },
+    {
+      "nombre": "Diseño de sistemas",
+      "progreso": 25
+    }
+  ],
+  "proyectos": [
+    {
+      "nombre": "Portfolio",
+      "descripcion": "",
+      "paginaUrl": "#",
+      "repositorioUrl": "#",
+      "img": "../assets/img/portfolio.png"
+    },
+    {
+      "nombre": "Portfolio2",
+      "descripcion": "",
+      "paginaUrl": "#",
+      "repoUrl": "#",
+      "img": "../assets/img/portfolio.png"
+    }
+  ]
+}
