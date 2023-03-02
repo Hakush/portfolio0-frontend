@@ -8,13 +8,15 @@ import { PortfolioService } from 'src/app/services/portfolio.service';
 })
 export class ProfileComponent implements OnInit {
 
+  miPortfolio:any;
+
   constructor(private datosPortfolio:PortfolioService) {
 
   }
 
   ngOnInit():void {
     this.datosPortfolio.obtenerDatos().subscribe(data => {
-      console.log(data);
+      this.miPortfolio = data;
     });
   }
 }

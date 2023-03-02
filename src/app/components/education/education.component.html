@@ -10,12 +10,7 @@
           <p class="card-text">
           <ul type="circle" style="display: inline-block; text-align: left;">
 
-            <li><strong>Titulo Secundario:</strong> Bachiller especializado en Ciencias Sociales Otorgado por Ipem Independencia 97 en el 2020
-
-            <!--TODO: Barra de progreso en 35%, indicando 8 materias de 27-->
-            <li><strong>Terciario/Universitario:</strong> Estudiante de 2do año de la carrera de Lic. en Ciencias de la Computación, FAMAF, UNC. (Progreso 30%, Materias 8/27, Promedio: 8.46)
-              
-            <li><strong>Curso Fullstack Developer (Bootstrap, Angular, Springboot):</strong> Argentina Programa
+            <li *ngFor="let edu of educationList" ><strong>{{edu.nivel}}:</strong> {{edu.descripcion}}
           
           </ul>
 

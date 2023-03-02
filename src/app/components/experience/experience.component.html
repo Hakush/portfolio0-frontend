@@ -10,12 +10,11 @@
             <p class="card-text">
             <ul type="none" style="display: inline-block; text-align: left;">
 
-              <li>
-              <div style="font-size: 20px; text-align:center;"><strong></strong> Armado y reparación de pc </div>
-              <strong>Tareas realizadas:</strong> Instalación de OS, software, conexión de cables/componentes,
-              atención al ciente, caja, diseño gráfico y publicidad
-              <div><strong>Referencia:</strong> Patricio Ferreira 351 5452149</div>
-              <div style="opacity: 80%; text-align: center;">[2017-actualidad]</div>
+              <li *ngFor="let exp of experiences" >
+              <div style="font-size: 20px; text-align:center;"><strong> Armado y reparación de pc </strong> </div>
+              <strong>Tareas realizadas:</strong> {{exp.descripcion}}
+              <div><strong>Referencia:</strong> {{exp.referencia}}</div>
+              <div style="opacity: 80%; text-align: center;">[{{exp.inicio}}-{{exp.fin}}]</div>
             </ul>
 
           </div>

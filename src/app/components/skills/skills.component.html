@@ -9,17 +9,9 @@
         </div>
         <div class="card-body pt-0">
           <p class="card-text">
-          <div class="col-sm"></div>
             <div class="col-sm" id="hard_and_soft_skills"> 
                       <div class="row align-items-center">
-                        <div class="col-sm" id="skill1">Ingles</div>
-                        <div class="col-sm" id="skill2">Git</div>
-                        <div class="col-sm" id="skill3">C</div>
-                      </div>
-                      <div class="row align-items-center">
-                        <div class="col-sm" id="skill4">Bootstrap</div>
-                        <div class="col-sm" id="skill5">Angular</div>
-                        <div class="col-sm" id="skill6">Springboot</div>
+                        <div class="col-sm" *ngFor="let sk of skillsList">{{sk.name}}</div>
                       </div>
             </div>
           <div class="col-sm"></div>

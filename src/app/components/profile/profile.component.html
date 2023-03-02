@@ -5,11 +5,11 @@
         <div class="card bg-dark mb-3" style="max-width: 700px;">
           <div class="row g-0">
           <div class="col-md-4">
-            <img src="assets/perfil3.png" class="img-fluid rounded-start" alt="Foto de Perfil">
+            <img [src]="miPortfolio.imgsrc" class="img-fluid rounded-start" alt="Foto de Perfil">
           </div>
           <div class="col-md-8">
             <div class="card-body">
-             <h2 class="card-title" style="display: inline-block;">Facundo Sharry</h2>
+             <h2 class="card-title" style="display: inline-block;"> {{miPortfolio.name}} </h2>
 
              <div class="btn-edit" style="display: inline-block;">
               <button class="bi bi-pencil-square btn btn-dark btn-right mb-2"></button>
@@ -17,9 +17,9 @@
 
               <p class="card-text">
                 <ul type="circle" style="display: inline-block; text-align: left;">
-          <li> Fullstack developer junior
-          <li> Computer Science student at FaMAF-UNC
-          <li> Cordoba (Argentina)
+          <li> {{miPortfolio.position}}
+          <li> {{miPortfolio.position2}}
+          <li> {{miPortfolio.from}}
           <li> <a class="link-danger" style="text-decoration: none;" href="#idfooter"> Contactame </a>
         </ul> <!-- target="_blank" hace que la pagina se abra en otra pestaña-->
 
