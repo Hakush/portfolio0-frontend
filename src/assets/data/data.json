@@ -1,13 +1,13 @@
 {
   "name": "Facundo Sharry",
-  "age": "21 años",
+  "age": 21,
   "position": "Fullstack developer junior",
   "position2": "Computer Science student at FaMAF-UNC",
-  "from": "Cordoba, Argentina",
+  "pfrom": "Cordoba, Argentina",
   "cellphone": "(+54 9) 3547-563095",
   "email": "facundo.sharry@gmail.com",
-  "imgsrc": "../assets/perfil3.png",
-  "acercaDe": "",
+  "img_src": "../assets/perfil3.png",
+  "about": "",
   "experiencias": [
     {
       "posicion": "Armado y reparacion de PC",
