@@ -13,7 +13,8 @@ export class PersonService {
   constructor(private http: HttpClient) { }
 
   public getPerson(): Observable<person> {
-
+    
+    // getProfile returns the Person with id=1
     return this.http.get<person>(this.URL + 'getProfile')
   }
 }
